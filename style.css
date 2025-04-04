@@ -1,0 +1,642 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+.landing-page h1{
+    font-size: 3rem;
+}
+.landing-page p{
+    font-size: 1.8rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-evenly; /* Even spacing for tabs */
+    align-items: center;
+    background-color: #2e7d32; /* Earthy green */
+    padding: 15px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+nav {
+    background-color: #2e8b57;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    
+        color: #FFCC00; /* Darker green on hover */
+}
+
+
+/* Landing Page */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: linear-gradient(to bottom, #2E8B57, #1E90FF);
+    color: white;
+    text-align: center;
+    animation: fadeInSlide 1.5s ease-out forwards;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile Section */
+.profile-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.profile-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.profile-container button:hover {
+    background-color: #1c6c40;
+}
+
+/* Waste Information */
+.waste-info {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    animation: fadeInSlide 1.5s ease-out 0.5s forwards;
+}
+
+.waste-info h2 {
+    font-size: 2.2rem;
+    color: #28a745;
+    margin-bottom: 30px;
+}
+
+.waste-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.waste-type {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInSlide 1.5s ease-out 0.8s forwards;
+}
+
+.waste-type:hover {
+    transform: scale(1.05);
+}
+
+.waste-type img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* registration form*/
+/* Registration Form Styling */
+.registration-container {
+    background: #f8f9fa;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.registration-container h2 {
+    color: #2d6a4f;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.registration-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.registration-container input:focus {
+    border-color: #2d6a4f;
+    outline: none;
+    box-shadow: 0 0 8px rgba(45, 106, 79, 0.3);
+}
+
+.registration-container button {
+    background: #2d6a4f;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.registration-container button:hover {
+    background: #40916c;
+}
+
+.registration-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.registration-container a {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.registration-container a:hover {
+    text-decoration: underline;
+}
+.registration-container input {
+    width: calc(100% - 24px); /* Ensures uniform margins */
+    padding: 12px;
+    margin: 8px auto; /* Centers the input fields */
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/*  bins centers */
+#waste-centres {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+#waste-centres h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.waste-centre-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between boxes */
+    justify-content: center;
+}
+
+.waste-centre {
+    background: #eef5e1;
+    border: 2px solid #4caf50;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px; /* Ensures all boxes have equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.waste-centre a {
+    color: #388e3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .waste-centre-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .waste-centre-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+    }
+}
+
+/* analytics */
+.analytics-section {
+    padding: 50px 10%;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.analytics-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.analytics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.analytics-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.analytics-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #007BFF;
+}
+
+.analytics-card .card-content {
+    padding: 15px;
+}
+
+.analytics-card h3 {
+    font-size: 1.4rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.analytics-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/*rewardds*/
+
+body {
+    background: #f5f7fa; /* Light background */
+    font-family: "Poppins", sans-serif;
+}
+
+#rewards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card Styling */
+.rewards-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.rewards-card h2 {
+    color: #007BFF;
+    font-size: 24px;
+}
+
+.subtext {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Points Display */
+.points-display h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.points {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.progress-text {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 20px;
+    height: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(135deg, #007BFF, #00D4FF);
+    border-radius: 20px;
+}
+
+/* Achievements */
+.achievement-title {
+    margin-top: 15px;
+    color: #333;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.badge {
+    background: #fff;
+    border: 2px solid #28a745;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #28a745;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Redeem Button */
+.redeem-btn {
+    background: linear-gradient(135deg, #007BFF, #00D4FF);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.redeem-btn:hover {
+    background: linear-gradient(135deg, #00D4FF, #007BFF);
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* complaint section */
+#complaint-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: linear-gradient(135deg, #007BFF, #00D4FF);*/
+    padding: 50px 0;
+}
+
+/* Complaint section centered properly with equal margins */
+.complaint-section {
+    width: 50%;
+    margin: 40px auto; /* Centers it horizontally */
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Ensures width includes padding */
+}
+
+/* Complaint card styling */
+.complaint-card {
+    background: white;
+    padding: 30px;
+    width: 100%; /* Ensures it takes full width of complaint section */
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header inside complaint card */
+.complaint-card h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Input group styling */
+.input-group {
+    width: 100%; /* Makes sure inputs stretch evenly */
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Label styling */
+.input-group label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input, select, and textarea styles */
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+/* Focus effect */
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #00D4FF;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Textarea specific styling */
+.input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background: linear-gradient(135deg, #007BFF, #00D4FF);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Hover effect on button */
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #00D4FF, #007BFF);
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* Ensure complaint section has a white background */
+body {
+    background: #ffffff;
+}
+
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #007BFF, #00D4FF);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white; /* Change color if needed */
+    font-size: 24px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #FFCC00; /* Highlight color on hover */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .complaint-container, .profile-container {
+        width: 90%;
+    }
+    .waste-type {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .waste-type img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+

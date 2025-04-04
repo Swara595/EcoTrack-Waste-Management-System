@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Register & Manage Waste</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Landing Section -->
+    <section id="home">
+    <div class="landing-page">
+        <h1>EcoTrack</h1>
+        <p>Your partner in sustainable waste management</p>
+    </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link" data-target="home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" class="nav-link" data-target="waste-centres"><i class="fas fa-store"></i> Waste Centers</a></li>
+                    <li><a href="#" class="nav-link" data-target="analytics"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                    <li><a href="#rewards-container">Rewards</a></li>
+                    <li><a href="#" class="nav-link" data-target="complaint-container"><i class="fas fa-exclamation-circle"></i> Complaints</a></li>
+                    <a href="#" id="myProfileTab">My Profile</a>
+
+
+
+                </ul>
+            </nav>
+            
+        </ul>
+    </nav>
+
+   <!-- Waste Information -->
+<div class="waste-info">
+    <h2>Join the Green Revolution: Learn About Waste Management!</h2>
+    <div class="waste-types">
+        <div class="waste-type">
+            <img src="img1.jpg" alt="Organic Waste">
+            <div class="waste-text">
+                <h3>Wet Waste - Organic or Biodegradeable</h3>
+                <p>Consists of: food scraps, fruit and vegetable peels, leftover food, egg shells, yard waste, tea bags. 
+                Does not consist of: milk packets/tetra packets, wrappers, empty boxes, containers. 
+                Keep a separate bin (ideally compostable) in the kitchen and ensure only biodegradable waste goes into it! Also, ensure the bin has drainage to prevent excess liquid buildup.</p>
+            </div>
+        </div>
+        <div class="waste-type">
+            <img src="img2.webp" alt="Recyclable Waste">
+            <div class="waste-text">
+                <h3>Dry Waste</h3>
+                <p>Waste that does not decompose naturally and changes form only by applying heat or chemical reactions is known as non-biodegradable/inorganic/dry waste. 
+                <br><b>Recyclable:</b> Paper, tissues, plastic bottles and containers, glass jars, metal cans. 
+                <br><b>Non-recyclable:</b> Plastic wrappers, bags, thermal paper receipts, bubble wrap. 
+                Use two separate bins for recyclables and non-recyclables. Contact your nearby scrap dealer to dispose of them properly.</p>
+            </div>
+        </div>
+        <div class="waste-type">
+            <img src="img3.jpg" alt="Hazardous Waste">
+            <div class="waste-text">
+                <h3>Electronic Waste</h3>
+                <p>Electronic waste (e-waste) is a generic term for old, end-of-life, or discarded electrical and electronic equipment. 
+                <br><b>Examples:</b> Computers, laptops, smartwatches, televisions, printers, refrigerators, washing machines, chargers, headphones. 
+                <br>Keep e-waste in designated areas, wipe personal data before disposal, and take it to certified e-waste recycling centers or manufacturer take-back programs.</p>
+            </div>
+        </div>
+        <div class="waste-type">
+            <img src="img4.jpg" alt="Hazardous Waste">
+            <div class="waste-text">
+                <h3>Textile Waste</h3>
+                <p>Textile waste includes discarded clothing, fabrics, and other textile materials. Recycling or repurposing these materials can reduce environmental impact.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Registration Form -->
+    <div id="registrationForm" class="registration-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="openLogin">Login here</a></p>
+    </div>
+
+    <!-- Profile Section (Hidden by Default) -->
+     <section id="profileSection">
+        <div id="profileSection" class="profile-container" style="display: none;">
+        <h2>My Profile</h2>
+        <p>Welcome to your profile!</p>
+        <button id="closeProfile">Close</button>
+    </div>
+    </section>
+
+    <section id="waste-centres">
+        <h2>Nearby Waste Bins & Collection Centers</h2>
+        
+        <div class="waste-centre-container">
+            <div class="waste-centre">
+                <h3>Green Earth Waste Management</h3>
+                <p><strong>Location:</strong> 45 Green Street, EcoCity</p>
+                <p><strong>Services:</strong> Plastic, Paper, Electronic Waste</p>
+                <p><strong>Timings:</strong> 8 AM - 8 PM</p>
+                <p><a href="https://maps.google.com/?q=45+Green+Street+EcoCity" target="_blank">📍 View on Map</a></p>
+            </div>
+    
+            <div class="waste-centre">
+                <h3>Urban Recycle Hub</h3>
+                <p><strong>Location:</strong> 22 Recycle Road, MetroTown</p>
+                <p><strong>Services:</strong> Household Waste, Glass, Metal</p>
+                <p><strong>Timings:</strong> 9 AM - 7 PM</p>
+                <p><a href="https://maps.google.com/?q=22+Recycle+Road+MetroTown" target="_blank">📍 View on Map</a></p>
+            </div>
+    
+            <div class="waste-centre">
+                <h3>EcoWaste Disposal Center</h3>
+                <p><strong>Location:</strong> 89 Sustainability Lane, GreenVille</p>
+                <p><strong>Services:</strong> Organic Waste, Industrial Waste</p>
+                <p><strong>Timings:</strong> 7 AM - 6 PM</p>
+                <p><a href="https://maps.google.com/?q=89+Sustainability+Lane+GreenVille" target="_blank">📍 View on Map</a></p>
+            </div>
+    
+            <div class="waste-centre">
+                <h3>Zero Waste Collection Point</h3>
+                <p><strong>Location:</strong> 101 Clean Street, UrbanEco</p>
+                <p><strong>Services:</strong> Textile Waste, E-Waste</p>
+                <p><strong>Timings:</strong> 10 AM - 9 PM</p>
+                <p><a href="https://maps.google.com/?q=101+Clean+Street+UrbanEco" target="_blank">📍 View on Map</a></p>
+            </div>
+    
+            <div class="waste-centre">
+                <h3>GreenCycle Waste Solutions</h3>
+            <p><strong>Location:</strong> 78 Eco Avenue, NatureTown</p>
+            <p><strong>Services:</strong> Organic Waste, Plastic Recycling</p>
+            <p><strong>Timings:</strong> 6 AM - 7 PM</p>
+            <p><a href="https://maps.google.com/?q=78+Eco+Avenue+NatureTown" target="_blank">📍 View on Map</a></p>
+        </div>
+
+        <div class="waste-centre">
+            <h3>Sustainable Waste Depot</h3>
+            <p><strong>Location:</strong> 33 Renewable Road, GreenZone</p>
+            <p><strong>Services:</strong> Paper, Metal, Household Waste</p>
+            <p><strong>Timings:</strong> 8 AM - 6 PM</p>
+            <p><a href="https://maps.google.com/?q=33+Renewable+Road+GreenZone" target="_blank">📍 View on Map</a></p>
+        </div>
+    </div>
+</section>
+
+
+<section id="analytics" class="analytics-section">
+    <h2>Waste Analytics & Insights</h2>
+    <div class="analytics-container">
+        <div class="analytics-card">
+            <img src="analytics1.jpg" alt="Analytics Data">
+            <div class="card-content">
+                <h3>Waste Reduction Trends</h3>
+                <p>Track the progress of waste reduction over time and analyze disposal patterns.</p>
+            </div>
+        </div>
+        <div class="analytics-card">
+            <img src="analytics2.jpg" alt="Waste Management Stats">
+            <div class="card-content">
+                <h3>Segregation Efficiency</h3>
+                <p>Analyze how well waste is being segregated and identify areas for improvement.</p>
+            </div>
+        </div>
+        <div class="analytics-card">
+            <img src="analytics3.webp" alt="Recycling Impact">
+            <div class="card-content">
+                <h3>Recycling Impact</h3>
+                <p>Monitor recycling rates and their effect on environmental sustainability.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="rewards-container">
+    <div class="rewards-card">
+        <h2>Your Rewards</h2>
+        <p class="subtext">Earn points by managing waste responsibly!</p>
+
+        <div class="points-display">
+            <h3>💰 <span class="points">1,250</span> Points</h3>
+            <p class="progress-text">You're just <span>250</span> points away from the next reward!</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+        </div>
+
+        <h3 class="achievement-title">🏆 Your Achievements</h3>
+        <div class="badges">
+            <div class="badge">
+                <img src="https://www.schoolbadgesuk.co.uk/cdn/shop/products/SBUK119-1a.png?v=1527506946" alt="Eco Warrior">
+                <p>Eco Warrior</p>
+            </div>
+            <div class="badge">
+                <img src="https://media.istockphoto.com/id/165800937/vector/green-super-hero.jpg?s=612x612&w=0&k=20&c=q0qk7QBNe6fruvcLlePdhy4eXpPGsNU6z7r72i1fazk=" alt="Recycling Hero">
+                <p>Recycling Hero</p>
+            </div>
+            <div class="badge">
+                <img src="https://img.pikbest.com/origin/09/11/29/54upIkbEsTxtX.png!w700wp" alt="Sustainability Star">
+                <p>Sustainability Star</p>
+            </div>
+        </div>
+
+        <button class="redeem-btn">Redeem Rewards</button>
+    </div>
+</section>
+    <section id="complaint-container">
+        <div class="complaint-card">
+            <h2>Submit a Complaint</h2>
+            <form>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="complaint-type">Complaint Type</label>
+                    <select id="complaint-type" required>
+                        <option value="">Select Complaint Type</option>
+                        <option value="uncollected">Uncollected Waste</option>
+                        <option value="overflowing">Overflowing Bins</option>
+                        <option value="segregation">Improper Waste Segregation</option>
+                        <option value="others">Other Issues</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" placeholder="Describe your complaint in detail" required></textarea>
+                </div>
+    
+                <div class="input-group">
+                    <label for="image">Upload Image (optional)</label>
+                    <input type="file" id="image" accept="image/*">
+                </div>
+    
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Waste Management | Designed with 💚 for sustainability</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
