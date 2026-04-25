@@ -63,8 +63,6 @@ node server.js
 http://localhost:3000
 Or simply open index.html directly in your browser for a static preview.
 
-# Screenshots : 
-
 # Waste Categories Covered : 
 Wet Waste — Food scraps, peels, biodegradable items
 Dry Waste — Recyclables (paper, plastic, glass, metal) and non-recyclables
