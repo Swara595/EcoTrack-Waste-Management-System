@@ -1,6 +1,6 @@
 A community-focused web platform to educate, track, and simplify waste management for a sustainable future. 
 
-📌 About the Project
+# About the Project :
 EcoTrack is a full-stack web application designed to tackle the growing problem of waste management while promoting sustainability and community engagement.
 The platform helps users:
           Learn how to correctly segregate different types of waste
@@ -9,7 +9,7 @@ The platform helps users:
           Track recycling analytics and waste reduction trends
           Earn rewards for responsible waste disposal habits
 
-✨ Features
+# Features 
 Feature                              Description 
 Waste Education                   Detailed guides on Wet, Dry, E-Waste, and Textile waste segregation 
 Waste Centers                     Directory of nearby waste collection centers with Map links
@@ -18,7 +18,7 @@ Rewards System                    Points and badge system to incentivize respons
 Complaint Portal                  Submit complaints for uncollected waste, overflowing bins,or improper segregation
 User Registration                 Sign-up/login system with user profile management
 
-🛠️ Tech Stack
+# Tech Stack :
 Frontend: HTML5
           CSS3 (with responsive design)
           JavaScript (DOM manipulation, event handling)
@@ -26,7 +26,7 @@ Frontend: HTML5
           Google Fonts (Poppins)
 Backend:  Node.js (server.js)
 
-📁 Project Structure
+# Project Structure :
 EcoTrack-Waste-Management-System/
 │
 ├── index.html          # Main application page
@@ -44,7 +44,7 @@ EcoTrack-Waste-Management-System/
 ├── analytics2.jpg      # Segregation efficiency visual
 └── analytics3.webp     # Recycling impact visual
 
-🚀 Getting Started
+# Getting Started :
 Prerequisites : Node.js installed on your machine
 Installation : 
 # 1. Clone the repository
@@ -63,4 +63,42 @@ node server.js
 http://localhost:3000
 Or simply open index.html directly in your browser for a static preview.
 
-📸 Screenshots
+# Screenshots : 
+
+# Waste Categories Covered : 
+Wet Waste — Food scraps, peels, biodegradable items
+Dry Waste — Recyclables (paper, plastic, glass, metal) and non-recyclables
+E-Waste — Computers, phones, appliances, chargers
+Textile Waste — Discarded clothing and fabrics
+
+# Rewards System : 
+Users earn points for responsible waste disposal and unlock badges:
+1)Eco Warrior — For consistent waste reporting
+2)Recycling Hero — For recycling milestones
+3)Sustainability Star — For community contributions
+Points can be redeemed for rewards, encouraging long-term engagement.
+
+# Complaint System :
+Users can report: Uncollected waste
+                  Overflowing bins
+                  Improper waste segregation
+                  Other environmental issues
+Each complaint supports image upload for documentation.
+
+# Contributing : 
+Contributions, issues, and feature requests are welcome!
+
+Fork the repository
+Create your feature branch (git checkout -b feature/your-feature)
+Commit your changes (git commit -m 'Add your feature')
+Push to the branch (git push origin feature/your-feature)
+Open a Pull Request
+
+# Author : 
+Swaralee Sadul
+
+GitHub: @Swara595
+LinkedIn: Swaralee Sadul
+
+
+Built with 💚 for sustainability
