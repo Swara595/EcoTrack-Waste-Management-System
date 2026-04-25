@@ -97,8 +97,8 @@ Open a Pull Request
 # Author : 
 Swaralee Sadul
 
-GitHub: @Swara595
-LinkedIn: Swaralee Sadul
+# GitHub: @Swara595
+# LinkedIn: [Swaralee Sadul](https://www.linkedin.com/in/swaralee-sadul-b877172bb/)
 
 
 Built with 💚 for sustainability
